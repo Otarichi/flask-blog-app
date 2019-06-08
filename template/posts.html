@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="wb_CssMenu1">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="posts" target="_self">Posts</a>
+</li>
+<li><a role="menuitem" href="/post_add" target="_self">Add&nbsp;Post</a>
+</li>
+</ul>
+</div>
+    {% if TYPE == 'list' %}
+        {% for post in posts %}
+            <h1> Title: {{post[0]}} </h1>
+            <hr/>
+            <div id="wb_Text2">
+            <span style="color:#000000;font-family:Arial;font-size:13px;">{{post[1]}}</span></div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h1>{{posts}}</h1>
+    {% endif %}
+{%endblock content%}

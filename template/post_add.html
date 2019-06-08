@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div id="wb_Form1" style="position:absolute;left:3px;top:80px;width:605px;height:385px;z-index:4;">
+        <form  action="/post_add" name="Form1" method="post" id="Form1">
+            <input type="text" id="Editbox1" style="position:absolute;left:35px;top:37px;width:521px;height:23px;z-index:0;" name="Editbox1" value="" spellcheck="false">
+            <textarea name="TextArea1" id="TextArea1" style="position:absolute;left:35px;top:109px;width:521px;height:215px;z-index:1;" rows="12" cols="84" spellcheck="false"></textarea>
+            <label for="" id="Label1" style="position:absolute;left:35px;top:78px;width:92px;height:23px;line-height:23px;z-index:2;">ტექსტი:</label>
+            <label for="" id="Label2" style="position:absolute;left:35px;top:6px;width:92px;height:23px;line-height:23px;z-index:3;">სათაური:</label>
+            <input type="submit" id="Button1" name="" value="Add Post" style="position:absolute;left:470px;top:343px;width:96px;height:36px;z-index:4;">
+        </form>
+</div>
+<div id="wb_CssMenu1" style="position:absolute;left:38px;top:35px;width:168px;height:28px;z-index:5;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="/" target="_self">Posts</a>
+</li>
+<li><a role="menuitem" href="/post_add" target="_self">Add&nbsp;Post</a>
+</li>
+</ul>
+</div>
+<div id="wb_Text1" style="position:absolute;left:210px;top:465px;width:191px;height:16px;text-align:center;z-index:6;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Please fill all form!</span></div>
+</div>
+
+{% endblock content%}
